@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block content %}
+        <div>
+            
+
+
+            <h3>Current list of books</h3>
+
+            {% for book in books %}
+                <div>
+                    Author: {{book.author}}<br />
+                    Title: {{book.title}}<br />
+                    Genre: {{book.genre}}<br />
+                    Price: ${{book.price}}<br />
+                    <a href="{{url_for('edit', book_id=book.id, author=book.author, title=book.title, genre=book.genre, price=book.price)}}">Edit Book</a><br />
+                    
+                    &nbsp;&nbsp;
+                    
+
+                    <br /><br />
+                    
+                </div>
+            {% endfor %}
+            
+        </div>
+{% endblock %}
