@@ -4,3 +4,9 @@ Flask is a micro web framework written in Python. It is classified as a microfra
 
 https://flask.palletsprojects.com/en/1.1.x/
 
+Typical tasks involved might include:
+1. Flask startup and configuration
+2. Designing requests
+3. Connecting the database in Flask
+4. Rendering html page 
+
