@@ -47,8 +47,13 @@ Typical tasks involved might include:
   https://jinja.palletsprojects.com/en/2.11.x/
 
    {% extends 'base.html' %} {% block content %}
+   
    -- REPORT_VIEW -
+   
    {% for key in tables_dict %}
+   
    {{key}}
+   
    {{ tables_dict[key]|safe }} {% endfor %}
+   
    {% endblock %}
