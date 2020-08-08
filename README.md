@@ -8,6 +8,7 @@ Typical tasks involved might include:
 1. Flask startup and configuration
 
    from flask import Flask, request, render_template, url_for, redirect, session, flash, g
+   
    import os
    host = os.getenv("IP", "127.0.0.1")
    port = int(os.getenv("PORT", "5000"))
